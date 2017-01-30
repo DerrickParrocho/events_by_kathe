@@ -40,3 +40,10 @@ background: #FFEEEE; /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #FFEEEE , #DDEFBB); /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #FFEEEE , #DDEFBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.jumbotron {
+    /* add bootstrap jumbotron background image */
+    background: url("https://thumbs.dreamstime.com/z/green-natural-abstract-background-leaves-bokeh-border-design-35971822.jpg");
+    max-height: 300px;
+    color: #FFF;
+}
