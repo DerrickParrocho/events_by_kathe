@@ -36,14 +36,15 @@ body {
 
 body {
 // gradient from http://uigradients.com/#
-background: #FFEEEE; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #FFEEEE , #DDEFBB); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #FFEEEE , #DDEFBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #E0EAFC; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #E0EAFC , #CFDEF3); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #E0EAFC , #CFDEF3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .jumbotron {
     /* add bootstrap jumbotron background image */
-    background: url("https://thumbs.dreamstime.com/z/green-natural-abstract-background-leaves-bokeh-border-design-35971822.jpg");
-    max-height: 300px;
+//    background: url("http://tumblrchase.com/img/bg/93.gif");
+//    background-size: 1400px 500px;
+//    background-repeat: no-repeat;
     color: #FFF;
 }
