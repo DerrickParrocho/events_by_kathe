@@ -36,7 +36,7 @@
                         <li><%= link_to "Services", services_path %></li>
                     </li>
                     <li>
-                        <li><%= link_to "Contact", contact_path %></li>
+                        <li><%= link_to "Contact", new_contact_path %></li>
                     </li>
                 </ul>
             </div>
@@ -46,8 +46,11 @@
 </nav>
 
     <div class="container-fluid">
-      <%= yield %>  
-    </div>
+        <% flash.each do |key, value| %>
+          <%= content_tag :div, value, class: "alert alert-#{key}" %>
+        <% end %>
+     <%= yield %>  
+    </div>  
 </body>
 
 </html>
