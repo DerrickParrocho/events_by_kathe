@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   root 'pages#home'
   get '/gallery' => 'pages#gallery'
   get '/services' => 'pages#services'
-  #get '/contact' => 'pages#contact'
   resources :contacts
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
