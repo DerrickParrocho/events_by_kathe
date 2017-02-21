@@ -6,8 +6,9 @@
       <%= javascript_include_tag 'application' %>
       <%= csrf_meta_tags %>
 </head>
-<body>
 
+<body>
+    
 <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -44,13 +45,31 @@
         </div>
         <!-- /.container -->
 </nav>
+        
+        <div class="container-fluid">
+            <div class="pull-right">
+                <div id="fb-root" ></div>    
+                <div class="fb-like text-right" data-width="150px" data-href="https://www.facebook.com/eventsbykathe/" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+            </div>
+        </div>
 
-    <div class="container-fluid">
-        <% flash.each do |key, value| %>
-          <%= content_tag :div, value, class: "alert alert-#{key}" %>
-        <% end %>
-     <%= yield %>  
-    </div>  
+        <div class="container-fluid">
+            <% flash.each do |key, value| %>
+              <%= content_tag :div, value, class: "alert alert-#{key}" %>
+            <% end %>
+            <%= yield %>
+        </div>
 </body>
+
+<hr>
+        
+<!-- Footer -->
+    <footer>
+        <div class="container-fluid">
+            <div class="col-lg-12 text-center">
+                <p>Copyright &copy; Events by Kathe 2017</p>
+            </div>
+        </div>
+    </footer>
 
 </html>
